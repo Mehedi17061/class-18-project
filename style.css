@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* default css */
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: block;
+    
+}
+.f-right{
+    float:right;
+}
+.f-left{
+    float: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+img{
+    max-width: 100%;
+    /* padding: 6px 0px 0px; */
+}
+a{
+    text-decoration: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,p{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* all the section title */
+
+.common-title{
+    padding-bottom: 50px;
+}
+.common-title h1{
+    font-size: 50px;
+    padding: 10px;
+    font-weight: 500;
+}
+.common-title h3{
+    font-size: 27px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 1.5;
+    
+}
+
+
+/* header-section */
+.header{
+    background: #fff;
+    /* overflow: hidden; */
+    
+    position:sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    z-index: 99;
+   
+}
+.header .logo{
+    width: 30%;
+    /* float: left; */
+}
+.header .logo img{
+    width: 95px;
+    padding: 10px 0px 0px;
+}
+
+
+.header .menu{
+    width: 70%;
+}
+.header .menu ul{
+    list-style: none;
+    text-align:right;
+}
+.header .menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header .menu ul li a{
+    display: inline-block;
+    line-height: 49px;
+    /* padding: 10px 20px; */
+    font-size: 18px;
+    margin: 12px 16px;
+    color: #000;
+    /* border: 1px solid red; */
+}
+
+.header .menu ul li a:hover {
+    color:rgba(55, 55, 235, 0.897);
+    transition: .2s;
+}
+
+
+
+
+/* banner start */
+
+.banner {
+    background: url(./image/banner.jpg) no-repeat center center scroll;
+    background-size: cover;
+    padding: 120px 0px;
+    text-align: center;
+    color: #fff;
+    opacity:1;
+    z-index: 1;
+    position: relative;
+
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    z-index: -1;
+
+}
+.banner h3{
+    font-size: 27px;
+}
+.banner h1{
+    padding: 50px 10px;
+    font-size: 60px;
+}
+.banner a{
+    background: white;
+    color: rgba(0, 0, 0, 0.603);
+    padding: 17px 42px;
+    display: inline-block;
+   
+    margin: 0px 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: .3s;
+    font-weight:bold
+}
+.banner a span{
+    margin-right: 3px;
+}
+.banner a:hover{
+    background:#DCA33D;
+    color: #fff;
+}
+
+
+/* banner end */
+
+
+/* pricing -table section */
+.pricing-table{
+    background:#F7F7F7 ;
+    padding: 65px 0px 50px;
+}
+
+.pricing-table .pricing{
+
+width: 100%;
+
+/* border: 1px solid #ddd; */
+
+padding: 20px;
+
+display: inline-block;
+
+/* margin: 11px; */
+
+/* box-shadow: 1px 1px 11px 1px #ddd; */
+
+border-bottom:1px solid gray;
+
+overflow: overlay;
+
+box-sizing: border-box;
+border-radius:10px 10px 0px 0px;
+}
+.pricing-table .pricing h3{
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.pricing-table .pricing p{
+    font-size: 21px;
+    /* color: rgba(0, 0, 0, 0.514); */
+    line-height: 1.5;
+}
+.pricing-table .pricing  .wrap h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 0px;
+    background: #76767634;
+}
+.pricing-table .pricing  .wrap h2 span{
+    font-size: 17px;
+}
+.pricing-table .pricing:hover{
+    background: #DCA33D;
+    color: #fff;
+    transition: .2s;
+}
+.table{
+  
+width: 100%;
+  
+padding: 21px;
+  
+display: inline-block;
+  
+overflow: overlay;
+  
+box-sizing: border-box;
+}
+
+.table ul {
+    list-style: none;
+}
+
+.table ul li span{
+    line-height: 2.5;
+    font-size: 23px;
+    color: #909089;
+}
+.table ul li span::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    padding-right: 10px;
+    color: #DCA33D;
+}
+.table ul li span.cross::before{
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    padding-right: 12px;
+    color: #DCA33D;
+}
+.table-content{
+    width: 30%;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: 15px;
+    padding-bottom: 50px;
+    box-shadow: 1px 1px 11px 1px #ddd;
+    border-radius:10px;
+}
+.table-content .price-btn {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.486);
+    padding: 20px 65px;
+    display: block;
+    margin: 0 39px;
+    text-align: center;
+    box-shadow: 1px 2px 3px 1px #ddd;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 1.1;
+    display: inline-block;
+    word-spacing: 1.3px;
+    /* position: relative;
+     */
+    transition: .2s;
+}
+
+.table-content:hover a{
+    background: #DCA33D;
+    color: #fff;
+}
+
+/* team -section */
+.team{
+    padding: 50px 0px 30px 0px;
+}
+
+.team-member {
+    background: rgb(250, 248, 248);
+    box-sizing: border-box;
+    width: 22%;
+    text-align: left;
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+    margin-right: 20px;
+    /* padding-bottom: 30px; */
+    box-shadow:1px 2px 10px 2px #ddd;
+    display: inline-block;
+    border: 10px double #ff9b00;
+}
+.team-member:last-child{
+    margin-right: 0;
+}
+.team-member img {
+   width: 100%;
+   border-radius:10px 10px 0px 0px;
+}
+.team-member .name-box{
+    padding: 20px;
+}
+.team-member h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.team-member h4{
+    font-size: 21px;
+    font-weight: 400;
+   
+    color: #909089;
+}
+
+
+/* newslatter css */
+.newslatter{
+    background: #F5F5F5;
+    padding: 80px 0px 60px;
+}
+.newslatter input{
+    width: 550px;
+    padding: 13px 23px 13px 10px;
+    margin-right: 10px;
+    font-size: 21px;
+    border-radius: 7px;
+    outline: none;
+    /* border: 1px solid blue; */
+    background: #fff;
+    border: none;
+   
+    box-shadow: 2px 2px 21px #fff;
+    /* margin: 0px 106px; */
+    margin: auto;
+    border: 1px solid #AA972C;
+}
+.newslatter a{
+    border: 1px solid #AA972C;
+    padding: 13px 70px;
+    display: block;
+    font-size: 22px;
+    border-radius: 6px;
+    background: #AA972C;
+    color: #fff;
+    width: 121px;
+    margin: 20px auto;
+}
+.newslatter a:hover{
+    background: #fff;
+    color:  #AA972C;
+    box-shadow: 1px 1px 21px #E1E8F6;
+    border: 1px solid #B1BAB4;
+}
+
+.newslatter input:focus{
+    box-shadow: 1px 1px 21px #E1E8F6;
+    transition: .2s;
+}
+
+/* about us */
+
+.about-us{
+    padding: 50px 10px 40px;
+}
+.about-us .about-image{
+    width: 38%;
+}
+
+.about-us .about-content{
+    width: 60%;
+}
+.about-us .about-content ul{
+    list-style: decimal;
+    padding: 31px;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+.about-us .about-content ul li {
+    padding: 10px;
+}
+.about-us .about-content ul li h2{
+    margin: 10px 0px;
+}
+.about-us .about-content ul li p{
+    line-height: 1.5;
+    margin: 10px 0px;
+    font-weight: initial;
+    font-size:18px;
+}
+
+
+
+
+
+/* blog */
+
+.blog{
+    background: #F7F9FF;
+    padding: 80px 0px 60px;
+}
+.blog .bloger{
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+    /* margin: 6px; */
+    margin-right: 11px;
+    border: 1px solid gray;
+}
+.blog .bloger .text{
+    background: #fafafa;
+    padding: 25px 9px;
+    position: relative;
+    box-shadow:1px 1px 18px 1px #ddd;
+    z-index: 1;
+}
+.blog .bloger .text:hover{
+    box-shadow:1px 1px 25px 1px #ddd;
+}
+
+.blog .bloger .text::before{
+    content: "\f10d ";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    left: 52px;
+    top: 26px;
+    font-size: 60px;
+    color:#F0F0F0;
+    z-index: -1;
+
+}
+
+.blog .bloger .text::after{
+    content: "\f0dd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 87%;
+    font-size: 60px;
+    color: #fafafa;
+    /* opacity: .4; */
+    opacity:1;
+}
+
+.blog .bloger .text p{
+    font-size: 23px;
+    padding: 30px 37px;
+    line-height: 1.5;
+    color: #767676; 
+    text-align: left;   
+
+}
+
+.blog .bloger .user{
+    margin-top: 19px;
+    /* margin-left: 45px; */
+}
+.blog .bloger .user img{
+    width: 73px;
+    display: inline-block;
+    margin-left: 35px;
+    border: 10px solid rgb(171, 149, 36);
+    display: inline-block;
+    /* box-sizing: border-box; */
+}
+.blog .bloger .user .name{
+    /* position: relative; */
+    display: inline-block;
+    position: relative;
+    top: -27px;
+    left: 22px;}
+
+.blog .bloger .user .name h2{
+    font-weight: 500;
+}
+.blog .bloger .user .name h3{
+    font-weight: 400;
+    text-align: left;
+}
+
+/* contact form */
+
+
+.contact{
+    padding: 50px 5px 40px 0px;
+}
+.contact .map{
+    width: 47%;
+    margin: 5px;
+    float: left;
+}
+
+.contact .contact-form{
+    /* width: 47%; */
+    width: 630px;
+    /* margin: 5px; */
+    /* float: right; */
+    box-sizing:border-box;
+    margin: auto;
+    
+}
+.contact .contact-form h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.contact .contact-form p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.contact .contact-form input{
+    width: 46%;
+    padding: 15px 5px 15px 13px;
+    /* margin-right: 10px; */
+    font-size: 17px;
+    border-radius: 7px;
+    outline: none;
+    background: #fff;
+    border:1px solid rgba(128, 128, 128, 0.377);
+    box-shadow: 2px 2px 21px #fff;
+    margin: 20px 14px 20px 5px;
+    overflow: overlay;
+    box-sizing: border-box;
+}
+.contact .contact-form input:focus{
+    box-shadow: 1px 1px 21px #9DA1AF;
+    transition: .2s;
+    border:1px solid #9DA1AF;
+}
+
+.contact .contact-form .full-width{
+    width: 96%;
+    padding: 14px 0px 13px 13px;
+    margin-right: 10px;
+   
+    border-radius: 7px;
+    outline: none;
+    background: #fff;
+    border:1px solid rgba(128, 128, 128, 0.377);
+   
+    box-sizing:border-box;
+}
+.contact .contact-form .full-width:focus{
+    box-shadow: 1px 1px 21px #9DA1AF;
+    transition: .2s;
+    border:1px solid #9DA1AF;
+}
+.contact .contact-form  input.submit-btn{
+border: 1px solid #9DA1AF;
+padding: 13px 70px;
+display:block;
+font-size: 22px;
+border-radius: 6px;
+background: #AA972C;
+color: #fff;
+transition: .2s;
+margin: 10px auto;
+}
+.contact .contact-form  input.submit-btn:hover{
+    background: #fff ;
+    color: #AA972C;
+    box-shadow: 1px 1px 21px #9DA1AF;
+    
+}
+
+
+
+.footer{
+    padding: 50px 0px 10px;
+    font-size: 20px;
+}
